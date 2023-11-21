@@ -1,0 +1,146 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([{
+  title: "Juguete para Gatos con Catnip",
+  price: 9.99,
+  description: "Juguete interactivo para gatos con catnip incorporado para estimular su interés.",
+  category: "Juguetes",
+  image: "gato_juguete1.jpg"
+},
+{
+  title: "Collar de Cuero para Perros",
+  price: 15.99,
+  description: "Collar duradero y elegante hecho de cuero genuino para perros de todos los tamaños.",
+  category: "Accesorios",
+  image: "perro_collar1.jpg"
+},
+{
+  title: "Acuario Completo para Peces Tropicales",
+  price: 79.99,
+  description: "Acuario completo con sistema de filtración y calefacción para peces tropicales.",
+  category: "Acuarios",
+  image: "pez_acuario1.jpg"
+},
+{
+  title: "Comida para Conejos Orgánica",
+  price: 12.99,
+  description: "Alimento balanceado y orgánico para conejos, rico en nutrientes esenciales.",
+  category: "Alimentación",
+  image: "conejo_comida1.jpg"
+},
+{
+  title: "Hueso de Juguete para Perros",
+  price: 8.99,
+  description: "Hueso de goma duradero para ayudar en la higiene dental y entretener a tu perro.",
+  category: "Juguetes",
+  image: "perro_juguete1.jpg"
+},
+{
+  title: "Cama Suave para Gatos",
+  price: 24.99,
+  description: "Cama suave y acogedora para que tu gato descanse cómodamente.",
+  category: "Camas",
+  image: "gato_cama1.jpg"
+},
+{
+  title: "Arnés Ajustable para Hurones",
+  price: 18.99,
+  description: "Arnés ajustable para hurones con correa para paseos seguros y controlados.",
+  category: "Accesorios",
+  image: "huron_arnes1.jpg"
+},
+{
+  title: "Juguete Interactivo para Pájaros",
+  price: 14.99,
+  description: "Juguete interactivo con campanas y espejos para mantener entretenidos a los pájaros.",
+  category: "Juguetes",
+  image: "pajaro_juguete1.jpg"
+},
+{
+  title: "Arena para Gatos con Aroma a Lavanda",
+  price: 7.99,
+  description: "Arena aglomerante para gatos con agradable aroma a lavanda para controlar olores.",
+  category: "Higiene",
+  image: "gato_arena1.jpg"
+},
+{
+  title: "Caseta para Perros al Aire Libre",
+  price: 49.99,
+  description: "Caseta resistente a la intemperie para que tu perro tenga un refugio cómodo al aire libre.",
+  category: "Hábitats",
+  image: "perro_caseta1.jpg"
+},
+{
+  title: "Rascador para Gatos con Plataforma",
+  price: 29.99,
+  description: "Rascador vertical con plataforma para que tu gato afile sus garras y descanse.",
+  category: "Juguetes",
+  image: "gato_rascador1.jpg"
+},
+{
+  title: "Pelota de Juguete para Perros",
+  price: 6.99,
+  description: "Pelota de goma resistente para juegos interactivos y ejercicios para perros.",
+  category: "Juguetes",
+  image: "perro_pelota1.jpg"
+},
+{
+  title: "Correa Extensible para Paseos con Perros",
+  price: 17.99,
+  description: "Correa extensible para paseos cómodos con perros de todas las razas y tamaños.",
+  category: "Accesorios",
+  image: "perro_correa1.jpg"
+},
+{
+  title: "Jaula Espaciosa para Roedores",
+  price: 39.99,
+  description: "Jaula amplia y segura para hamsters u otros roedores, con niveles y tubos.",
+  category: "Hábitats",
+  image: "roedor_jaula1.jpg"
+},
+{
+  title: "Kit de Juguetes para Cachorros",
+  price: 22.99,
+  description: "Kit con varios juguetes diseñados especialmente para cachorros en crecimiento.",
+  category: "Juguetes",
+  image: "cachorro_juguete1.jpg"
+},
+{
+  title: "Terrario para Reptiles",
+  price: 69.99,
+  description: "Terrario espacioso y seguro para reptiles, con áreas cálidas y frías.",
+  category: "Hábitats",
+  image: "reptil_terrario1.jpg"
+},
+{
+  title: "Cepillo de Aseo para Gatos",
+  price: 11.99,
+  description: "Cepillo suave para el aseo diario y la eliminación de pelo suelto en gatos.",
+  category: "Higiene",
+  image: "gato_cepillo1.jpg"
+},
+{
+  title: "Cama Térmica para Mascotas",
+  price: 32.99,
+  description: "Cama térmica con función de autocalentamiento para mantener a tus mascotas calientes.",
+  category: "Camas",
+  image: "mascota_cama_termica1.jpg"
+},
+{
+  title: "Bol de Acero Inoxidable para Comida de Perros",
+  price: 13.99,
+  description: "Bol duradero y resistente a la oxidación para la comida diaria de tu perro.",
+  category: "Accesorios",
+  image: "perro_comedero1.jpg"
+},
+{
+  title: "Kit de Juguetes para Pájaros",
+  price: 19.99,
+  description: "Kit con variedad de juguetes para mantener entretenidos a los pájaros en sus jaulas.",
+  category: "Juguetes",
+  image: "pajaro_kit_juguetes1.jpg"
+}])

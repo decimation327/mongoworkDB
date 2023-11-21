@@ -1,0 +1,113 @@
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      name: 'Change name',
+      price: 3000,
+    }
+  }
+)
+
+db.products.updateOne(
+    // query
+    {_id: 2},
+    // change => operators
+    {
+      $set: {
+        name: 'Shampoo sin sal',
+        price: 20000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 3},
+    // change => operators
+    {
+      $set: {
+        name: 'Comida para gatos',
+        price: 8000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 4},
+    // change => operators
+    {
+      $set: {
+        name: 'Repelente para pulgas',
+        price: 30000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 5},
+    // change => operators
+    {
+      $set: {
+        name: 'peineta quitaPelos',
+        price: 5000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 6},
+    // change => operators
+    {
+      $set: {
+        name: 'Maleta para Gatos',
+        price: 70000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 7},
+    // change => operators
+    {
+      $set: {
+        name: 'Cama',
+        price: 120000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 8},
+    // change => operators
+    {
+      $set: {
+        name: 'Rascador para gatos',
+        price: 21000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 9},
+    // change => operators
+    {
+      $set: {
+        name: 'Juguete con sonido',
+        price: 8000,
+      }
+    }
+  )
+  db.products.updateOne(
+    // query
+    {_id: 10},
+    // change => operators
+    {
+      $set: {
+        name: 'peluche',
+        price: 25000,
+      }
+    }
+  )
